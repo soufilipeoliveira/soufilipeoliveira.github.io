@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--/CSS-->
+    
+    <!--Boxicons CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!--/Boxicons CSS-->
+    
+    <title>Sua Empresa LTDA. - Automation Project</title> 
+</head>
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name" id="nome">Sua Empresa LTDA</span>
+                    <span class="profession">Control painel</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box" id="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+
+                    <li id="navselected" class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bxs-home icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class='bx bxs-dashboard icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="quotes.html">
+                            <i class='bx bxs-calculator icon'></i>
+                            <span class="text nav-text">Quotes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="customers.html">
+                            <i class='bx bxs-user-account icon' ></i>
+                            <span class="text nav-text">Leads</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="financial.html">
+                            <i class='bx bxs-dollar-circle icon' ></i>
+                            <span class="text nav-text">Financial</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="reminder.html">
+                            <i class='bx bxs-bell-ring icon' ></i>
+                            <span class="text nav-text">Reminders</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="logout" id="logout">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <h1 class="text">Painel de Controle</h1>
+    
+        <div style="margin-bottom: 20px;">
+            <p style="font-size: 18px; color: var(--text-color);">Olá, seja bem-vindo! Aqui você acompanha os principais dados da sua operação em tempo real.</p>
+        </div>
+    
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+    
+            <!-- Box 1 - Lembretes -->
+            <div class="section">
+                <h3>🔔 Lembretes Ativos</h3>
+                <p>3 lembretes agendados para os próximos dias:</p>
+                <ul style="text-align: left; font-size: 14px; margin-top: 10px;">
+                    <li>✔ Follow-up com Cliente XPTO</li>
+                    <li>✔ Vencimento de fatura em 2 dias</li>
+                    <li>✔ Atualizar cotação do cliente ABC</li>
+                </ul>
+            </div>
+    
+            <!-- Box 2 - Cotações em andamento -->
+            <div class="section">
+                <h3>📋 Cotações em Andamento</h3>
+                <p>Atualmente existem <strong>5 cotações</strong> em andamento.</p>
+                <p>Última enviada: <strong>ABC Ltda.</strong> - R$ 12.300</p>
+            </div>
+    
+            <!-- Box 3 - Receita Total -->
+            <div class="section">
+                <h3>💰 Receita Total (Mês)</h3>
+                <p style="font-size: 22px; font-weight: bold; color: green;">R$ 28.500</p>
+                <p style="font-size: 14px;">Meta mensal: R$ 35.000</p>
+            </div>
+    
+            <!-- Box 4 - Leads Ativos -->
+            <div class="section">
+                <h3>👥 Leads Ativos</h3>
+                <p>Você possui <strong>128 leads ativos</strong>.</p>
+                <p>Novos esta semana: <strong>7</strong></p>
+            </div>
+    
+            <!-- Box 5 - Câmbio Atual -->
+            <div class="section">
+                <h3>💱 Câmbio Atual</h3>
+                <ul style="text-align: left; font-size: 14px; margin-top: 10px;">
+                    <li>🇺🇸 Dólar: R$ 5,12</li>
+                    <li>🇪🇺 Euro: R$ 5,56</li>
+                    <li>🇧🇷 Real: R$ 1,00</li>
+                </ul>
+                <p style="margin-top: 10px;"><em>Atualizado às 10:05</em></p>
+            </div>
+    
+            <!-- Box 6 - Atividades Recentes -->
+            <div class="section">
+                <h3>🕒 Atividades Recentes</h3>
+                <ul style="text-align: left; font-size: 14px; margin-top: 10px;">
+                    <li>✔ Cotação enviada a XPTO</li>
+                    <li>✔ Novo lead cadastrado: João</li>
+                    <li>✔ Receita registrada: R$ 2.000</li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <img id="logoavi" src="aviat.png">
+    </section>
+
+    <!--Footer -->
+    <footer>
+        &copy; <span id="anoAtual"></span> Sua Empresa LTDA. ➔ Seu slogan aqui.
+    </footer>
+    <!-- /Footer -->
+
+        
+    <script src="script.js"></script>
+
+</body>
+</html>
