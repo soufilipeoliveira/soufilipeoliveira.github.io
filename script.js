@@ -110,12 +110,22 @@ if (savedTheme) {
 }
 
 // Verificar e aplicar o estado do sidebar salvo
+const isMobile = window.innerWidth <= 768;
 const savedSidebarState = localStorage.getItem("sidebar");
-if (savedSidebarState === "close") {
+
+if (isMobile) {
+    // Em dispositivos móveis, sempre iniciar como recolhido
     sidebar.classList.add("close");
+    localStorage.setItem("sidebar", "close");
 } else {
-    sidebar.classList.remove("close");
+    // Em desktops, usar o estado salvo
+    if (savedSidebarState === "close") {
+        sidebar.classList.add("close");
+    } else {
+        sidebar.classList.remove("close");
+    }
 }
+
 
 // Função para desativar animações temporariamente
 function disableAnimations() {
